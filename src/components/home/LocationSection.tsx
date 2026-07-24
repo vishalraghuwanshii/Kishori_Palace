@@ -5,24 +5,19 @@ import { Button } from "@/components/ui/button";
 
 export function LocationSection() {
   return (
-    <section className="py-32 bg-background border-t border-border">
+    <section className="py-16 md:py-32 bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-24">
-          <p className="text-xs uppercase tracking-[0.2em] text-primary mb-6">
-            Visit Us
-          </p>
-          <h2 className="font-heading text-4xl md:text-6xl font-light text-foreground">
-            Find <span className="italic text-primary">Kishori Palace</span>
-          </h2>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           
           {/* Details Side */}
           <div className="flex flex-col lg:order-1 order-2">
-            <h3 className="font-heading text-3xl md:text-4xl font-light text-foreground mb-10">
-              Centrally Located in Ashoknagar
-            </h3>
+            <p className="text-xs uppercase tracking-[0.2em] text-primary mb-6">
+              Visit Us
+            </p>
+            <h2 className="font-heading text-4xl md:text-6xl font-light text-foreground mb-8">
+              Find <span className="italic text-primary">Kishori Palace</span>
+            </h2>
+            <div className="w-12 h-px bg-primary/30 mb-10" />
             
             <div className="space-y-12 mb-12">
               <div className="flex gap-6">

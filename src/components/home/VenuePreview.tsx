@@ -8,13 +8,13 @@ const leftColumnSpaces = [
   {
     name: "The Grand Banquet",
     desc: "A pillarless hall designed for royal celebrations.",
-    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Banquet Hall.JPG",
+    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Banquet Hall.webp",
     aspect: "aspect-[16/10] md:aspect-[4/3]",
   },
   {
     name: "Luxury Suites",
     desc: "Rest and prepare in absolute opulence.",
-    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-photo.JPG",
+    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-photo.webp",
     aspect: "aspect-[4/5] md:aspect-[3/4]",
   }
 ];
@@ -23,13 +23,13 @@ const rightColumnSpaces = [
   {
     name: "The Royal Lawn",
     desc: "Lush, open skies for majestic evening receptions.",
-    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Garden.JPG",
+    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Garden.webp",
     aspect: "aspect-[4/5] md:aspect-[3/4]",
   },
   {
     name: "The Oasis Pool",
     desc: "A tranquil setting for intimate gatherings.",
-    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/pool-wateerfall photo.JPG",
+    image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/pool-wateerfall photo.webp",
     aspect: "aspect-[16/10] md:aspect-[4/3]",
   }
 ];

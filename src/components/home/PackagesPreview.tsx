@@ -55,9 +55,9 @@ export function PackagesPreview() {
   };
 
   return (
-    <section className="py-32 bg-secondary border-t border-border">
+    <section className="py-16 md:py-32 bg-secondary border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-24">
+        <div className="text-right mb-24 max-w-3xl ml-auto">
           <p className="text-xs uppercase tracking-[0.2em] text-primary mb-6">
             Curated Experiences
           </p>

@@ -44,19 +44,20 @@
 }
 
 :root {
-  /* Brand Tokens - Ivory/Light Luxury Theme */
-  --bg-primary: #FBFBF9;
-  --bg-secondary: #F3F3F0;
-  --bg-tertiary: #EAEAE5;
-  --surface: #FFFFFF;
-  --card: #FFFFFF;
-  --accent-gold: #C9A227;
-  --accent-gold-hover: #B08D22;
-  --accent-emerald: #064E3B;
-  --text-primary: #1A1A1A;
-  --text-secondary: #5A5A5A;
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --overlay-scrim: rgba(251, 251, 249, 0.85);
+  /* Brand Tokens - Dark Heritage Luxury Theme */
+  --bg-primary: #14100D;
+  --bg-secondary: #1E1712;
+  --bg-tertiary: #2A2019;
+  --surface: #1E1712;
+  --card: #1E1712;
+  --accent-gold: #C8A968;
+  --accent-gold-hover: #DBBE80;
+  --accent-emerald: #0E4D3C;
+  --accent-oxblood: #6B1F2A;
+  --text-primary: #F2ECE1;
+  --text-secondary: #A99C8C;
+  --border-subtle: rgba(200, 169, 104, 0.15);
+  --overlay-scrim: rgba(20, 16, 13, 0.85);
 
   /* Shadcn standard mappings */
   --background: var(--bg-primary);
@@ -88,7 +89,13 @@
     @apply bg-background text-foreground font-sans;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-medium tracking-tight;
+    @apply font-heading font-light tracking-[0.02em];
+  }
+}
+
+@layer utilities {
+  .bg-lantern-glow {
+    background-image: radial-gradient(circle at center, rgba(200, 169, 104, 0.08) 0%, transparent 65%);
   }
 }
 

@@ -1,5 +1,6 @@
 import { Hero } from "@/components/home/Hero";
 import { PropertyHighlights } from "@/components/home/PropertyHighlights";
+import { SignatureImage } from "@/components/home/SignatureImage";
 import { AboutStrip } from "@/components/home/AboutStrip";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { VenuePreview } from "@/components/home/VenuePreview";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Hero />
       <PropertyHighlights />
+      <SignatureImage />
       <AboutStrip />
       <WhyChooseUs />
       <VenuePreview />

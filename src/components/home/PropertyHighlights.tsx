@@ -47,7 +47,7 @@ export function PropertyHighlights() {
   ];
 
   return (
-    <section className="w-full bg-secondary py-16 md:py-24 border-b border-border relative z-30">
+    <section className="w-full bg-secondary py-12 md:py-16 border-b border-border relative z-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-4">
           {stats.map((stat, index) => (

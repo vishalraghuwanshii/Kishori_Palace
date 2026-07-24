@@ -81,7 +81,7 @@ export default function AboutPage() {
             className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-border"
           >
             <Image
-              src="https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/HotelDroneCloseupshotoflogo2.JPG"
+              src="https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/HotelDroneCloseupshotoflogo2.webp"
               alt="Kishori Palace Exterior"
               fill
               className="object-cover"

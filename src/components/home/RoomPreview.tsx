@@ -8,10 +8,10 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
 const rooms = [
-  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Room-11.JPG", title: "Luxury Suite", desc: "Our most spacious offering with a private lounge." },
-  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-8.JPG", title: "Deluxe AC Room", desc: "Elegant comfort with modern amenities." },
-  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-9.JPG", title: "Premium Suite", desc: "Designed for the couple, offering unmatched privacy." },
-  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-photo.JPG", title: "Family Room", desc: "Spacious quarters for your closest guests." },
+  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Room-11.webp", title: "Luxury Suite", desc: "Our most spacious offering with a private lounge." },
+  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-8.webp", title: "Deluxe AC Room", desc: "Elegant comfort with modern amenities." },
+  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-9.webp", title: "Premium Suite", desc: "Designed for the couple, offering unmatched privacy." },
+  { image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/room-photo.webp", title: "Family Room", desc: "Spacious quarters for your closest guests." },
 ];
 
 export function RoomPreview() {

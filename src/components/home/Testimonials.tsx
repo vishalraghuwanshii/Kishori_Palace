@@ -47,19 +47,24 @@ export function Testimonials() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="py-32 bg-secondary border-t border-border relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-secondary border-t border-border relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-24">
-          <p className="text-xs uppercase tracking-[0.2em] text-primary mb-6">
-            Words From Our Guests
-          </p>
-          <h2 className="font-heading text-4xl md:text-6xl font-light text-foreground">
-            Enduring <span className="italic text-primary">Memories</span>
-          </h2>
-        </div>
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+          
+          {/* Left Column: Heading */}
+          <div className="lg:w-1/3 text-left w-full">
+            <p className="text-xs uppercase tracking-[0.2em] text-primary mb-6">
+              Words From Our Guests
+            </p>
+            <h2 className="font-heading text-4xl md:text-6xl font-light text-foreground mb-8">
+              Enduring <br className="hidden lg:block"/><span className="italic text-primary">Memories</span>
+            </h2>
+            <div className="w-12 h-px bg-primary/30" />
+          </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
+          {/* Right Column: Carousel */}
+          <div className="lg:w-2/3 w-full">
+            <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
             <div className="flex">
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-4 md:px-12">
@@ -67,7 +72,7 @@ export function Testimonials() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-center relative flex flex-col items-center"
+                    className="text-left relative flex flex-col items-start"
                   >
                     <Quote className="w-8 h-8 text-primary/40 mb-8" />
                     
@@ -75,7 +80,7 @@ export function Testimonials() {
                       {testimonial.quote}
                     </p>
                     
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-start">
                       <div className="w-12 h-px bg-primary mb-6" />
                       <div className="font-heading text-xl text-foreground mb-2">{testimonial.name}</div>
                       <div className="text-xs text-muted-foreground uppercase tracking-[0.2em]">{testimonial.event}</div>
@@ -86,7 +91,7 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-4 mt-16">
+          <div className="flex justify-start gap-4 mt-16 px-4 md:px-12">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -99,6 +104,7 @@ export function Testimonials() {
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
+          </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export function FinalCTA() {
   return (
-    <section className="py-24 bg-secondary relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-secondary relative overflow-hidden">
       {/* Subtle emerald tint as requested in PRD 6.11 */}
       <div className="absolute inset-0 bg-[#1F5E52]/5" />
       
@@ -20,13 +20,13 @@ export function FinalCTA() {
         
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <Button asChild size="lg" className="h-14 px-8 text-base bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_rgba(201,162,39,0.2)]">
-            <a href="tel:+919999999999">
+            <a href="tel:+917880291335">
               <Phone className="mr-2 h-5 w-5" /> Call Now
             </a>
           </Button>
           
           <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base border-emerald-600/30 bg-emerald-600/10 text-foreground hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
-            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/917880291335" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-5 w-5" /> Chat on WhatsApp
             </a>
           </Button>

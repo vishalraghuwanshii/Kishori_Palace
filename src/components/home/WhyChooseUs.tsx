@@ -76,13 +76,13 @@ export function WhyChooseUs() {
   };
 
   return (
-    <section className="py-24 bg-secondary">
+    <section className="py-16 md:py-32 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 md:mb-24">
           <p className="font-heading text-sm tracking-[0.08em] uppercase text-primary mb-4">
             The Kishori Palace Difference
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl font-medium text-foreground">
+          <h2 className="font-heading text-4xl md:text-5xl font-light text-foreground">
             Why Choose Us
           </h2>
         </div>
@@ -94,21 +94,24 @@ export function WhyChooseUs() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
-            className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+            className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 ml-0"
           >
             {reasons.map((reason, index) => (
               <motion.div 
                 key={index}
                 variants={itemVariants}
-                className="flex-[0_0_85%] min-w-0 md:flex-none p-8 rounded-2xl bg-card border border-border transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_8px_30px_rgba(201,162,39,0.1)] group"
+                className="flex-[0_0_85%] min-w-0 md:flex-none p-8 md:p-10 bg-card border border-[#C8A968]/10 transition-all duration-500 hover:-translate-y-2 hover:border-[#C8A968]/40 hover:bg-[#2A2019] group relative overflow-hidden"
               >
-                <div className="mb-6 text-primary group-hover:scale-110 transition-transform duration-300 origin-left">
+                {/* Subtle hover glow inside the card */}
+                <div className="absolute inset-0 bg-lantern-glow opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+
+                <div className="mb-8 text-primary group-hover:scale-110 transition-transform duration-500 origin-left relative z-10">
                   {reason.icon}
                 </div>
-                <h3 className="font-heading text-xl md:text-2xl font-medium text-foreground mb-4">
+                <h3 className="font-heading text-2xl font-light text-foreground mb-4 relative z-10">
                   {reason.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground font-light leading-relaxed relative z-10">
                   {reason.description}
                 </p>
               </motion.div>
@@ -117,13 +120,13 @@ export function WhyChooseUs() {
         </div>
         
         {/* Mobile Pagination Dots */}
-        <div className="flex md:hidden justify-center gap-2 mt-8">
+        <div className="flex md:hidden justify-center gap-4 mt-12">
           {reasons.map((_, index) => (
             <button
               key={index}
               onClick={() => emblaApi?.scrollTo(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                index === selectedIndex ? "bg-primary w-6" : "bg-border"
+              className={`h-px transition-all duration-500 ${
+                index === selectedIndex ? "bg-primary w-12" : "bg-border w-4"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

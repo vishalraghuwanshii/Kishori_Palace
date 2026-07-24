@@ -15,7 +15,7 @@ export default function VenuePage() {
         { label: "Capacity", value: "800 - 1,000 Guests", icon: <Users className="w-5 h-5" /> },
         { label: "Climate Control", value: "Fully Air Conditioned", icon: <Snowflake className="w-5 h-5" /> },
       ],
-      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Banquet Hall.JPG",
+      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Banquet Hall.webp",
       reverse: false,
     },
     {
@@ -27,7 +27,7 @@ export default function VenuePage() {
         { label: "Capacity", value: "1,000+ Guests", icon: <Users className="w-5 h-5" /> },
         { label: "Vibe", value: "Open-air Elegance", icon: <Sparkles className="w-5 h-5" /> },
       ],
-      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Garden.JPG",
+      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Garden.webp",
       reverse: true,
     },
     {
@@ -38,7 +38,7 @@ export default function VenuePage() {
         { label: "Inventory", value: "18 AC Rooms", icon: <Maximize className="w-5 h-5" /> },
         { label: "Amenities", value: "En-suite Bath, WiFi, TV", icon: <Sparkles className="w-5 h-5" /> },
       ],
-      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Room-11.JPG",
+      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Room-11.webp",
       reverse: false,
     },
     {
@@ -49,7 +49,7 @@ export default function VenuePage() {
         { label: "Access", value: "Exclusive for Guests", icon: <Users className="w-5 h-5" /> },
         { label: "Ideal For", value: "Haldi, Pool Parties", icon: <Sparkles className="w-5 h-5" /> },
       ],
-      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Pool.JPG",
+      image: "https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Pool.webp",
       reverse: true,
     }
   ];

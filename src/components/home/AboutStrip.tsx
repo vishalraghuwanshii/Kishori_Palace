@@ -6,9 +6,12 @@ import { motion } from "framer-motion";
 
 export function AboutStrip() {
   return (
-    <section className="py-16 md:py-48 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-background relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          {/* Left Text Column */}
+          <div className="lg:col-span-5 flex flex-col items-start text-left max-w-2xl">
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -23,16 +26,16 @@ export function AboutStrip() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="font-heading text-3xl md:text-6xl font-light text-foreground mb-8 leading-[1.1]"
+            className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 leading-[1.1]"
           >
-            Where Heritage Meets <span className="italic text-primary">Modern Grandeur</span>
+            Where Heritage Meets <br className="hidden md:block" /><span className="italic text-primary">Modern Grandeur</span>
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, scaleY: 0 }}
             whileInView={{ opacity: 1, scaleY: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="w-px h-16 bg-primary/30 mb-8"
+            className="w-px h-12 bg-primary/30 mb-8 ml-2"
           />
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -49,7 +52,7 @@ export function AboutStrip() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="mt-12"
+            className="mt-10"
           >
             <Link 
               href="/about" 
@@ -61,35 +64,41 @@ export function AboutStrip() {
         </div>
 
         {/* Cinematic Imagery */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-0 items-center">
+        <div className="lg:col-span-7 grid grid-cols-2 gap-4 lg:gap-6 mt-16 lg:mt-0 items-center">
+          
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="md:col-span-8 relative aspect-[16/10] md:aspect-[21/9] overflow-hidden group"
+            className="relative w-full aspect-[4/5] overflow-hidden group border border-[#C8A968]/20 mt-12 md:mt-24"
           >
+            <div className="absolute inset-0 bg-lantern-glow mix-blend-screen opacity-20 z-10 pointer-events-none transition-opacity duration-700 group-hover:opacity-40" />
             <Image 
-              src="https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/HotelDroneDay.JPG" 
-              alt="Grand Banquet Hall" 
+              src="https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/HotelDroneDay.webp" 
+              alt="Kishori Palace Aerial View" 
               fill 
-              className="object-cover transition-transform duration-[2s] group-hover:scale-105"
+              className="object-cover transition-transform duration-[3s] group-hover:scale-105"
             />
           </motion.div>
+
           <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
-            className="md:col-span-4 relative aspect-[4/5] overflow-hidden mt-6 md:mt-32 md:-ml-24 z-10 border-4 md:border-8 border-background group shadow-2xl"
+            transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+            className="relative w-full aspect-[4/5] overflow-hidden group border border-[#C8A968]/20 mb-12 md:mb-24"
           >
+            <div className="absolute inset-0 bg-lantern-glow mix-blend-screen opacity-20 z-10 pointer-events-none transition-opacity duration-700 group-hover:opacity-40" />
             <Image 
-              src="https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/Reception desk.JPG" 
-              alt="Lush Lawns" 
+              src="https://pub-d85a0963552a45eaa4638691f287aaaa.r2.dev/media/HotelDroneDay5.webp" 
+              alt="Kishori Palace Grand Exterior" 
               fill 
-              className="object-cover transition-transform duration-[2s] group-hover:scale-105"
+              className="object-cover transition-transform duration-[3s] group-hover:scale-105"
             />
           </motion.div>
+
+        </div>
         </div>
       </div>
     </section>
